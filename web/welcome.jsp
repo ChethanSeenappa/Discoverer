@@ -15,6 +15,7 @@
         <br>
         <div align='center' class="bodyStyle">
             <a href="new">Create new user.</a>	
+            <a href="upload">Upload file.</a>	
         </div>
     </body>
 </html>
