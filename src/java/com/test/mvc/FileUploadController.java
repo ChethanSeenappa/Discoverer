@@ -34,7 +34,7 @@ public class FileUploadController {
         return "upload";
     }
     
-    @RequestMapping(value="/save", headers=("content-type=multipart/*"), method = RequestMethod.POST)
+    @RequestMapping(value="/download", headers=("content-type=multipart/*"), method = RequestMethod.POST)
     public @ResponseBody String download(@RequestParam("file") MultipartFile file, ModelMap model){
         MonkParser monkParser = new MonkParser();
         MasterTemplateUtil masterTemplate = new MasterTemplateUtil();
