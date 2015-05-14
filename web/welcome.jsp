@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +14,9 @@
     </head>
     <body>
         <br>
+        <div id="header" align="center">
+            <img alt="Discoverer" src="<c:url value="/resources/logo.png"/>" height="130px;">
+        </div>
         <div align='center' class="bodyStyle">
             <a href="upload">Login Page Upload file</a>	
         </div>
