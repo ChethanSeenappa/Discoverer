@@ -4,12 +4,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Download</title>
+        <title>Discoverer</title>
     </head>
     <body>
         <div id="header" align="center">
             <img alt="Discoverer" src="<c:url value="/resources/logo.png"/>" height="130px;">
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div align='center' class="bodyStyle">
             <form action="download" method="POST">
                 <input type="hidden" name="filePath" value="${resultPath}"/>

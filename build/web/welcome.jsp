@@ -11,12 +11,19 @@
             font-size: 12px;
         }
         </style>
+        <title>Discoverer</title>
     </head>
     <body>
-        <br>
         <div id="header" align="center">
             <img alt="Discoverer" src="<c:url value="/resources/logo.png"/>" height="130px;">
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div align='center' class="bodyStyle">
             <a href="upload">Login Page Upload file</a>	
         </div>
