@@ -13,10 +13,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
@@ -26,7 +24,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-//import org.apache.log4j.Logger;
 
 /**
  *
@@ -34,7 +31,6 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 public class FileUploadController {
-//    private static final Logger logger = Logger.getLogger(FileUploadController.class);
 
     @RequestMapping(value="/upload", method =RequestMethod.GET)
     public String create(ModelMap model){
@@ -49,6 +45,14 @@ public class FileUploadController {
         masterTemplate.buildMSHSegment();
         masterTemplate.buildEVNSegment();
         masterTemplate.buildPIDSegment();
+        masterTemplate.buildPV1Segment();
+        masterTemplate.buildPV2Segment();
+        masterTemplate.buildDG1Segment();
+        masterTemplate.buildIN1Segment();
+        masterTemplate.buildNTESegment();
+        masterTemplate.buildOBRSegment();
+        masterTemplate.buildORCSegment();
+        masterTemplate.buildOBXSegment();
         String fileName = file.getOriginalFilename();
         String filePath = System.getProperty("java.io.tmpdir")+"\\"+fileName;
         try {
